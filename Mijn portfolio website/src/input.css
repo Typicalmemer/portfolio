@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Jersey+15&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-stack: "ABeeZee", sans-serif;
+    --font-sub: "Jersey 15", sans-serif;
+
+    --color-navajo-white: #FFDA9F;
+    --color-fawn: #FFBC6C;
+    --color-safety-orange: #FF8229;
+    --color-tawny: #CC5803;
+    --color-sepia: #653100;
+    --color-licorice: #2D1300;
+
+    --text-main-heading: 200px;
+    --text-sub-heading: 96px;
+    --text-nav-heading: 36px;
+}
+
+
+@keyframes flowDownAnimation {
+    0% {
+        transform: translateY(-7rem);
+        opacity: 0;
+    }
+
+    25% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translateY(-7rem);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#cvAlertWrapper {
+    position: absolute;
+    opacity: 0;
+}
+
+#cvAlertWrapper.animate {
+    animation-name: flowDownAnimation;
+    animation-duration: 8s;
+}
